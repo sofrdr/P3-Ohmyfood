@@ -1,4 +1,3 @@
-@import url("./utils/_variables.scss");
 body {
   margin: 0;
 }
@@ -15,6 +14,16 @@ body {
   .header__logo {
     width: 25%;
   }
+}
+
+.container {
+  background-color: #f2f2f2;
+}
+.container-explore {
+  text-align: center;
+}
+.container-pres {
+  background-color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

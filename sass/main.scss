@@ -1,4 +1,4 @@
-@import url("./utils/_variables.scss");
+@import "utils/_variables.scss";
 
 body{
     margin: 0;
@@ -15,6 +15,15 @@ body{
     @media screen and (min-width: 768px){
         width: 25%;
     }
-        
-    
+            
+}
+
+.container{
+    background-color: $color-grey;
+    &-explore{
+        text-align: center;
+    }
+    &-pres{
+        background-color: white;
+    }
 }
