@@ -37,6 +37,8 @@ h1, h2 {
   width: 15px;
   height: 15px;
   text-align: center;
+  position: absolute;
+  left: -10px;
 }
 
 .header__logo {
