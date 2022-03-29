@@ -4,3 +4,9 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+@mixin border-shadow{
+    border-radius: 30px;
+    box-shadow: 1px 1px 10px darken($color-grey, 40);
+    margin: 10px 0;
+}
