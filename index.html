@@ -4,42 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="./.css/style.css">
+    <link type="text/css" rel="stylesheet" href=".css/style.css">
     <script src="https://kit.fontawesome.com/7117d084c3.js" crossorigin="anonymous" defer></script>
     <title>Ohmyfood!</title>
 </head>
 <body>
       <header>
-          <img src="images/logo/ohmyfood.png" alt="logo Ohmyfood!">
+          <img src="images/logo/ohmyfood.png" alt="logo Ohmyfood!" class="header__logo">
       </header>
       <main>
-          <section class="explore"> <!-- Section 1 : Recherche de restaurants-->
+          <section class="container container-explore"> <!-- Section 1 : Recherche de restaurants-->
               <div>
                 <i class="fa-solid fa-location-dot"></i>
               </div>
               <div>
                   <h1>Réservez le menu qui vous convient</h1>
                   <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-                  <button>Explorer nos restaurants</button>
+                  <button class="container-explore__btn">Explorer nos restaurants</button>
               </div>
           </section>
-          <section> <!-- Section 2 : Présentation du fonctionnement-->
+          <section class="container container-pres"> <!-- Section 2 : Présentation du fonctionnement-->
               <h2>Fonctionnement</h2>
-                <div>
+                <div class="container-pres__element">
                     <p class="number--rounded">1</p>
                     <div>
                         <i class="fa-solid fa-mobile-screen-button"></i>
                         <p>Choisissez un restaurant</p>
                     </div>
                 </div>
-                <div>
+                <div class="container-pres__element">
                     <p class="number--rounded">2</p>
                     <div>
                         <i class="fa-solid fa-list"></i>
                         <p>Composez votre menu</p>
                     </div>
                 </div>
-                <div>
+                <div class="container-pres__element">
                     <p class="number--rounded">3</p>
                     <div>
                         <i class="fa-solid fa-store"></i>
@@ -47,15 +47,14 @@
                     </div>
                 </div>
             </section>
-            <section> <!-- Section 3 : Liste des restaurants-->
+            <section class="container"> <!-- Section 3 : Liste des restaurants-->
                 <h2>Restaurants</h2>
-                <div>
-                    <a href="la-palette-du-gout.html">
-                        <div>
+                    <a href="la-palette-du-gout.html" class="card">
+                        <div class="card__img">
                             <img src="./images/restaurants/la-palette-du-gout.jpg" alt="table au restaurant avec un plat de poisson sur lit de salade servi dans une assiette blanche">
                             <p>Nouveau</p>
                         </div>
-                        <div>
+                        <div class="card__heading">
                             <div>
                                 <h3>La palette du goût</h3>
                                 <p>Ménilmontant</p>
@@ -63,13 +62,13 @@
                             <!--Animation coeur-->
                         </div>
                     </a>
-                    <a href="la-note-enchantee.html">
+                    <a href="la-note-enchantee.html" class="card">
                         <div>
-                            <div>
+                            <div class="card__img">
                                 <img src="./images/restaurants/la-note-enchantée.jpg" alt="table vue de dessus avec entrée plat et corbeille de pain">
                                 <p>Nouveau</p>
                             </div>
-                            <div>
+                            <div class="card__heading">
                                 <div>
                                     <h3>La note enchantée</h3>
                                     <p>Charonne</p>
@@ -78,9 +77,9 @@
                             </div>
                         </div>
                     </a>
-                    <a href="a-la-francaise.html">
-                        <img src="./images/restaurants/a-la-francaise.jpg" alt="tartine épinards et oeufs mollets recouverte de sauce servie dans une assiette blanche">
-                        <div>
+                    <a href="a-la-francaise.html" class="card">
+                        <img src="./images/restaurants/a-la-francaise.jpg" alt="tartine épinards et oeufs mollets recouverte de sauce servie dans une assiette blanche" class="card__img">
+                        <div class="card__heading">
                             <div>
                                 <h3>A la française</h3>
                                 <p>Cité Rouge</p>
@@ -88,9 +87,9 @@
                             <!--Animation coeur-->
                         </div>                       
                     </a>
-                    <a href="le-delice-des-sens.html">
-                        <img src="./images/restaurants/le-delice-des-sens.jpg" alt="assiette rectangulaire en longueur avec poisson et légumes en sauce, table en bois décorée de bâtons de cannelle">
-                        <div>
+                    <a href="le-delice-des-sens.html" class="card">
+                        <img src="./images/restaurants/le-delice-des-sens.jpg" alt="assiette rectangulaire en longueur avec poisson et légumes en sauce, table en bois décorée de bâtons de cannelle" class="card__img">
+                        <div class="card__heading">
                             <div>
                                 <h3>Le délice des sens</h3>
                                 <p>Folie-Méricourt</p>
@@ -98,7 +97,6 @@
                             <!--Animation coeur-->
                         </div>
                     </a>
-                </div>
             </section>
       </main>
       <footer>
