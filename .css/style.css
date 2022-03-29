@@ -1,9 +1,18 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(/fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "Shrikhand";
+  src: url(/fonts/Shrikhand-Regular.ttf);
+}
 body {
   margin: 0;
+  font-family: "Roboto", "Arial", "Sans-serif";
 }
 
 .header__logo {
-  width: 50%;
+  width: 45%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -19,11 +28,28 @@ body {
 .container {
   background-color: #f2f2f2;
 }
+.container-loc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e5e5e5;
+  color: #404040;
+  font-weight: 600;
+  font-size: 18px;
+}
+.container-loc p {
+  margin-left: 20px;
+}
+.container-loc__icon {
+  font-size: 18px;
+}
 .container-explore {
   text-align: center;
+  padding: 20px 30px;
 }
 .container-pres {
   background-color: white;
+  padding: 20px 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
