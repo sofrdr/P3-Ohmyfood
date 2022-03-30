@@ -1,0 +1,59 @@
+@import "../utils/mixins";
+
+@font-face {
+    font-family: "Roboto";
+    src: url(/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-thin";
+    src: url(/fonts/Roboto-Thin.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-light";
+    src: url(/fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-bold";
+    src: url(/fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-medium";
+    src: url(/fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Shrikhand";
+    src: url(/fonts/Shrikhand-Regular.ttf);
+}
+
+body{
+    margin: 0;
+    font-family: "Roboto", "Arial", "Sans-serif" ;
+}
+
+h1, h2{
+    @include title-bold;
+}
+
+h2{
+    margin-bottom: 30px;
+}
+
+h3{
+    @include title-bold(20px);
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
