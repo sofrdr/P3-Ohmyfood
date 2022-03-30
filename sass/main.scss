@@ -40,8 +40,12 @@
         text-align: center;
         padding: $padding;
 
+        h1{
+            padding: 0 70px;
+        }
+
         p{
-            font-size: 18px;
+            font-size: 20px;
             font-family: "Roboto-light", "Arial", "Sans-serif";
             font-weight: 300;
         }
@@ -69,7 +73,8 @@
             align-items: center;         
             position: relative;
             padding: 10px 0;
-            font-family: "Roboto-medium";
+            font-family: "Roboto-medium", "Arial", "Sans-serif";
+            font-size: 18px;
             background-color: $color-grey;
             @include border-shadow(20px);
             
@@ -78,7 +83,8 @@
             }
 
             &__icon{
-                margin: 0 20px 0 40px;
+                margin: 0 30px 0 40px;
+                width: 18px;
                 color: darken($color-grey, 50);
                 font-size: 18px;
 

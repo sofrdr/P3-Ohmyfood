@@ -11,7 +11,7 @@
     margin: 20px 0;
 }
 
-@mixin title-bold($size: 24px){
+@mixin title-bold($size: 26px){
     font-family: "Roboto-bold", "Arial", "Sans-serif";
     font-size: $size;
     font-weight: 300;
