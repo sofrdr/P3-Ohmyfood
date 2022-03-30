@@ -33,7 +33,7 @@
     font-family: "Roboto", "Arial", "Sans-serif";
     cursor: pointer;
     @include border-shadow(30px);
-    &:hover{
+    &:hover {
         box-shadow: 1px 2px 30px $grey-shadow;
     }
 }
@@ -44,4 +44,10 @@
     font-size: 18px;
     background-color: $background-color;
     @include border-shadow(20px);
+}
+
+@mixin fit-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
