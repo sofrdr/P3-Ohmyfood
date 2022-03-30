@@ -5,8 +5,8 @@
     margin-bottom: 20px;
 }
 
-@mixin border-shadow{
-    border-radius: 30px;
+@mixin border-shadow($radius){
+    border-radius: $radius;
     box-shadow: 1px 1px 10px darken($color-grey, 40);
     margin: 20px 0;
 }

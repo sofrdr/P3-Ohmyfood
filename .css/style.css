@@ -101,11 +101,10 @@ h1, h2 {
 .container-pres__element {
   display: flex;
   align-items: center;
-  border-radius: 10px;
   position: relative;
   padding: 10px 0;
   background-color: #f2f2f2;
-  border-radius: 30px;
+  border-radius: 20px;
   box-shadow: 1px 1px 10px #8c8c8c;
   margin: 20px 0;
 }
