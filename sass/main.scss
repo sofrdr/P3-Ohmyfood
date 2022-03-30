@@ -58,8 +58,7 @@
         @media screen and (min-width:992px){
             width: 60%;
             text-align: center;
-            margin-right: auto;
-            margin-left: auto;
+            @include center;
         }
 
         &__element{
@@ -92,6 +91,12 @@
 
     &-restaurant{
         padding: 15px 20px 50px;
+
+        h2{
+            @media screen and (min-width:992px){
+                text-align: center;
+            }
+        }
 
         &-cards{
             @media screen and (min-width:768px) {
