@@ -104,6 +104,14 @@ ul {
 .card__heading {
   padding: 10px 15px;
   line-height: 0.4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card__heading__icon {
+  font-size: 30px;
+  color: #000;
+  margin-right: 15px;
 }
 .card__heading p {
   font-size: 18px;
