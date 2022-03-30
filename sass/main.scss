@@ -52,7 +52,7 @@
             border: hidden;
             padding: 15px 20px;
             font-size: 16px;
-            font-family: "Roboto";          
+            font-family: "Roboto", "Arial", "Sans-serif";          
             cursor: pointer;
             @include border-shadow(30px);
             
@@ -66,10 +66,10 @@
 
         &__element{
             display: flex;
-            align-items: center;
-            
+            align-items: center;         
             position: relative;
             padding: 10px 0;
+            font-family: "Roboto-medium";
             background-color: $color-grey;
             @include border-shadow(20px); 
 
