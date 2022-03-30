@@ -1,3 +1,4 @@
+@import url(../utils/_mixins.scss);
 @font-face {
   font-family: "Roboto";
   src: url(/fonts/Roboto-Regular.ttf);
@@ -46,6 +47,12 @@ h3 {
 a {
   text-decoration: none;
   color: #000000;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .number--rounded {
@@ -102,6 +109,22 @@ a {
   font-size: 18px;
   font-family: "Roboto-light", "Arial", "Sans-serif";
   font-weight: 300;
+  color: black;
+}
+
+footer {
+  background-color: #292929;
+  padding: 10px 30px;
+}
+footer a {
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.5;
+}
+footer h2 {
+  font-family: "Shrikhand";
+  color: #fff;
+  font-size: 22px;
 }
 
 .header__logo {
@@ -147,6 +170,7 @@ a {
   font-size: 20px;
   font-family: "Roboto-light", "Arial", "Sans-serif";
   font-weight: 300;
+  color: black;
 }
 .container-explore__btn {
   background: linear-gradient(to top left, #9356DC, #FF79DA);
