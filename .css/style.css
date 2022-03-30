@@ -28,6 +28,12 @@ body {
   font-family: "Roboto", "Arial", "Sans-serif";
 }
 
+@media screen and (min-width: 992px) {
+  main {
+    margin: 0 70px;
+  }
+}
+
 h1, h2 {
   font-family: "Roboto-bold", "Arial", "Sans-serif";
   font-size: 26px;
