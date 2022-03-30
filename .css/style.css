@@ -127,6 +127,9 @@ footer .footer__link {
   font-size: 18px;
   line-height: 2;
 }
+footer .footer__link--bold {
+  font-weight: 600;
+}
 footer .footer__icon {
   color: #fff;
   width: 12px;
