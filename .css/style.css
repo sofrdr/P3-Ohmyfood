@@ -133,18 +133,29 @@ ul {
   color: black;
 }
 
-.header__logo {
+header {
+  position: relative;
+}
+header .header__logo {
   width: 40%;
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
   margin-bottom: 20px;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
-  .header__logo {
+  header .header__logo {
     width: 20%;
   }
+}
+header .header__icon {
+  font-size: 24px;
+  color: #424242;
+  position: absolute;
+  left: 30px;
+  top: 5px;
 }
 
 footer {
