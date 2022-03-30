@@ -34,3 +34,11 @@
     cursor: pointer;
     @include border-shadow(30px);
 }
+
+@mixin element($background-color) {
+    padding: 10px 0;
+    font-family: "Roboto-medium", "Arial", "Sans-serif";
+    font-size: 18px;
+    background-color: $background-color;
+    @include border-shadow(20px);
+}

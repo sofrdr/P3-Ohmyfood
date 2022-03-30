@@ -58,11 +58,7 @@
             display: flex;
             align-items: center;         
             position: relative;
-            padding: 10px 0;
-            font-family: "Roboto-medium", "Arial", "Sans-serif";
-            font-size: 18px;
-            background-color: $color-grey;
-            @include border-shadow(20px);
+            @include element($color-grey);
             
             &--purple{
                 background-color: lighten($color-primary, 35);
