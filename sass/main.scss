@@ -71,10 +71,20 @@
             padding: 10px 0;
             font-family: "Roboto-medium";
             background-color: $color-grey;
-            @include border-shadow(20px); 
+            @include border-shadow(20px);
+            
+            &--purple{
+                background-color: lighten($color-primary, 35);
+            }
 
             &__icon{
                 margin: 0 20px 0 35px;
+                color: darken($color-grey, 50);
+                font-size: 18px;
+
+                &--purple{
+                    color: $color-primary;
+                }
             }
         }
         
