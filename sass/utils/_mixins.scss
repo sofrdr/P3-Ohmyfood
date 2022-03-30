@@ -33,6 +33,9 @@
     font-family: "Roboto", "Arial", "Sans-serif";
     cursor: pointer;
     @include border-shadow(30px);
+    &:hover{
+        box-shadow: 1px 2px 30px $grey-shadow;
+    }
 }
 
 @mixin element($background-color) {
