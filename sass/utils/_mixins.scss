@@ -10,3 +10,9 @@
     box-shadow: 1px 2px 10px $grey-shadow;
     margin: 20px 0;
 }
+
+@mixin title-bold($size: 24px){
+    font-family: "Roboto-bold", "Arial", "Sans-serif";
+    font-size: $size;
+    font-weight: 300;
+}
