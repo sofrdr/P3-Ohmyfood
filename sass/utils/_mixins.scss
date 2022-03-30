@@ -7,6 +7,6 @@
 
 @mixin border-shadow($radius){
     border-radius: $radius;
-    box-shadow: 1px 1px 10px darken($color-grey, 40);
+    box-shadow: 1px 2px 10px $grey-shadow;
     margin: 20px 0;
 }
