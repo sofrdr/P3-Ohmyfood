@@ -23,5 +23,10 @@ footer{
         width: 12px;
         height: 14px;
         margin-right: 20px;
+
+        &--rotate{
+            transform: rotate(-10deg);
+        }
     }
+
 }

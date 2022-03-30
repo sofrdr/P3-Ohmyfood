@@ -133,6 +133,9 @@ footer .footer__icon {
   height: 14px;
   margin-right: 20px;
 }
+footer .footer__icon--rotate {
+  transform: rotate(-10deg);
+}
 
 .header__logo {
   width: 40%;
