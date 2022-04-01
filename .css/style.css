@@ -170,6 +170,9 @@ ul {
 .container-menu__block h2 {
   text-transform: uppercase;
 }
+.container-menu__block h2 .bordered {
+  border-bottom: solid 3px #99E2D0;
+}
 .container-menu__element {
   padding: 10px 0;
   font-family: "Roboto-medium", "Arial", "Sans-serif";
@@ -182,7 +185,7 @@ ul {
   justify-content: space-between;
   align-items: flex-end;
   height: 70px;
-  padding: 10px 30px 10px 15px;
+  padding: 10px 30px 0px 15px;
 }
 .container-menu__element__description {
   line-height: 0.6;
