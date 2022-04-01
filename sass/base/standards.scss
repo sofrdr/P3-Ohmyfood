@@ -33,12 +33,16 @@
 body{
     margin: 0;
     font-family: "Roboto", "Arial", "Sans-serif" ;
+    
+    
 
 }
 
 main{
+    position: relative;
     @media screen and (min-width:992px){
        margin: 0 70px;
+
     }
 }
 

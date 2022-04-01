@@ -24,7 +24,7 @@
     color: $color;
 }
 
-@mixin btn {
+@mixin btn{
     background: linear-gradient(to top left, $color-primary, $color-secondary);
     color: white;
     border: hidden;
