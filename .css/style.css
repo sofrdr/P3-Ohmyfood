@@ -133,10 +133,15 @@ ul {
   color: black;
 }
 
-.bloc-img {
-  display: block;
+.container-img {
   width: 100%;
-  height: 500px;
+  height: 350px;
+  overflow: hidden;
+}
+.container-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 header {
