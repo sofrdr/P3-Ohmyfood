@@ -93,9 +93,6 @@
     margin-top: -60px;
     padding: 15px 20px 50px;
     
-    
-    
-
 
     &__heading{
         display: flex;
@@ -142,7 +139,7 @@
             line-height: 0.5;
 
             p{
-                @include light-p(18px);
+                @include light-p(16px);
             }
         }
     }
