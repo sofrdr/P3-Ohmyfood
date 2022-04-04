@@ -32,7 +32,11 @@ header{
 footer{
     background-color: darken($color-grey, 80);
     padding: 10px 30px 30px;
-    
+    @media screen and (min-width:992px){
+        display: flex;  
+        align-items: center;
+        justify-content: center;
+      }
     
     
 
@@ -41,6 +45,20 @@ footer{
         color: #fff;
         font-size: 22px;
         margin-bottom: 20px;
+    }
+
+    .footer__list{
+        @media screen and (min-width:992px){
+          display: flex;  
+          
+           
+        }
+
+        li{
+            @media screen and (min-width:992px){
+                margin-left: 50px; 
+              }
+        }
     }
 
     .footer__link{
