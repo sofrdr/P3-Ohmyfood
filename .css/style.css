@@ -274,7 +274,7 @@ footer p {
 }
 @media screen and (min-width: 992px) {
   footer .footer__list li {
-    margin-left: 50px;
+    margin-left: 60px;
   }
 }
 footer .footer__link {

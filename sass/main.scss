@@ -9,9 +9,7 @@
     background-color: $color-grey;
 
     &-loc{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-center;
         padding: 15px;
         background-color: darken($color-grey, 5);
         color: darken($color-grey, 70);
@@ -68,9 +66,7 @@
 
         &__block{
             @media screen and (min-width:992px){
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flex-center;
            
             }
 
