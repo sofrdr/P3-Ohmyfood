@@ -20,11 +20,11 @@
         <div class="container container-menu">
             <div class="container-menu__heading">
                 <h1>La note enchantée</h1>
-                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-heart container-menu__heading__icon"></i>
             </div>
             <!--LES ENTREES-->
-            <div>
-                <h2>Entrées</h2>
+            <div class="container-menu__block">
+                <h2><span class="bordered">Entr</span>ées</h2>
                 <!--Entrée 1-->
                 <div class="container-menu__element">
                     <div class="container-menu__element__description">
@@ -59,8 +59,8 @@
                 </div>
             </div>
             <!-- LES PLATS-->
-            <div>
-                <h2>Plats</h2>
+            <div class="container-menu__block">
+                <h2><span class="bordered">Plat</span>s</h2>
                 <!--Plat 1-->
                 <div class="container-menu__element">
                     <div class="container-menu__element__description">
@@ -87,8 +87,8 @@
                 </div>
             </div>
             <!-- LES DESSERTS-->
-            <div>
-                <h2>Desserts</h2>
+            <div class="container-menu__block">
+                <h2><span class="bordered">Dess</span>erts</h2>
                 <!--Dessert 1-->
                 <div class="container-menu__element">
                     <div class="container-menu__element__description">
@@ -114,8 +114,19 @@
                     <p class="container-menu__element__price">23€</p>
                 </div>
             </div>
-
+            <button class="container-menu__btn">Commander</button>
         </div>
     </main>
+    <footer>
+        <p>ohmyfood</p>
+        <ul>
+            <li><i class="fa-solid fa-utensils footer__icon"></i><a class="footer__link footer__link--bold"
+                    href="#">Proposer un restaurant</a></li>
+            <li><i class="fa-solid fa-handshake-angle footer__icon footer__icon--rotate"></i><a
+                    class="footer__link footer__link--bold" href="#">Devenir partenaire</a></li>
+            <li><a class="footer__link" href="#">Mentions légales</a></li>
+            <li><a class="footer__link" href="mailto:#">Contact</a></li>
+        </ul>
+    </footer>
 </body>
 </html>
