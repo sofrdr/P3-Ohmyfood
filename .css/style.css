@@ -61,6 +61,10 @@ ul {
   margin: 0;
 }
 
+::placeholder {
+  opacity: 1;
+}
+
 .number--rounded {
   background-color: #9356DC;
   border-radius: 100%;
@@ -281,13 +285,18 @@ footer .footer__icon--rotate {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 15px;
+  background-color: #e8e8e8;
+  color: #424242;
+}
+.container-loc__form {
+  margin-left: 20px;
+  border: hidden;
   background-color: #e8e8e8;
   color: #424242;
   font-weight: 600;
   font-size: 18px;
-}
-.container-loc p {
-  margin-left: 20px;
+  width: 150px;
 }
 .container-loc__icon {
   font-size: 18px;
