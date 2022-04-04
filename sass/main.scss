@@ -79,8 +79,8 @@
             @include element($color-grey);
 
             @media screen and (min-width:992px){
-                width: 25%;
-                margin-left: 50px;
+                width: 33%;
+                margin: 0 20px;
             }
             
             &--purple{
