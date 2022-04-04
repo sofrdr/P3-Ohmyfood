@@ -17,14 +17,19 @@
     font-weight: 300;
 }
 
+@mixin title-medium($size){
+    font-family: "Roboto-medium";
+    font-size: $size;
+}
+
 @mixin light-p($size: 20px, $color: black) {
     font-size: $size;
     font-family: "Roboto-light", "Arial", "Sans-serif";
-    font-weight: 300;
+    font-weight: 400;
     color: $color;
 }
 
-@mixin btn {
+@mixin btn{
     background: linear-gradient(to top left, $color-primary, $color-secondary);
     color: white;
     border: hidden;
@@ -33,7 +38,7 @@
     font-family: "Roboto", "Arial", "Sans-serif";
     cursor: pointer;
     @include border-shadow(30px);
-    &:hover{
+    &:hover {
         box-shadow: 1px 2px 30px $grey-shadow;
     }
 }
@@ -44,4 +49,22 @@
     font-size: 18px;
     background-color: $background-color;
     @include border-shadow(20px);
+}
+
+@mixin fit-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+@mixin heart-icon{
+    font-size: 30px;
+    color: #000;          
+    margin-right: 10px;
+}
+
+@mixin flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

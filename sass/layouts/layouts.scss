@@ -1,27 +1,64 @@
 @import url(../utils/_mixins.scss);
 
+/*HEADER*/
 
-.header__logo{
-    width: 40%;
-    display: block;
-    @include center;
-    
-    
-    @media screen and (min-width: 768px){
-        width: 20%;
+header{
+    position: relative;
+
+    .header__logo{
+        width: 40%;
+        display: block;
+        @include center;
+        text-align: center;
+        
+        
+        @media screen and (min-width: 768px){
+            width: 300px;
+        }
+                
     }
-            
+
+    .header__icon{
+        font-size: 24px;
+        color: darken($color-grey, 70);
+        position: absolute;
+        left: 30px;
+        top: 5px;
+        
+    }
 }
+
+
+/*FOOTER*/
 
 footer{
     background-color: darken($color-grey, 80);
     padding: 10px 30px 30px;
+    @media screen and (min-width:992px){
+        @include flex-center;
+        
+      }
+    
+    
 
-    h2{
+    p{
         font-family: "Shrikhand";
         color: #fff;
         font-size: 22px;
         margin-bottom: 20px;
+    }
+
+    .footer__list{
+        @media screen and (min-width:992px){
+          display: flex;  
+             
+        }
+
+        li{
+            @media screen and (min-width:992px){
+                margin-left: 60px; 
+              }
+        }
     }
 
     .footer__link{

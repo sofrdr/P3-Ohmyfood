@@ -1,6 +1,6 @@
 @import "utils/_variables.scss";
 @import "base/standards.scss";
-@import "utils/mixins";
+@import "utils/_mixins.scss";
 @import "components/components.scss";
 @import "layouts/layouts.scss";
 
@@ -9,16 +9,23 @@
     background-color: $color-grey;
 
     &-loc{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-center;
+        padding: 15px;
         background-color: darken($color-grey, 5);
         color: darken($color-grey, 70);
-        font-weight: 600;
-        font-size: 18px;
+        
 
-        p{
+        &__form{
             margin-left: 20px;
+            border: hidden;
+            background-color: darken($color-grey, 5);
+            color: darken($color-grey, 70);
+            font-weight: 600;
+            font-size: 18px;
+            width: 150px;
+            
+            
+            
         }        
 
         &__icon{
@@ -48,10 +55,21 @@
     &-pres{
         background-color: white;
         margin: 40px 30px;
-        @media screen and (min-width:992px){
-            width: 60%;
+
+        h2{
+            @media screen and (min-width:992px){
             text-align: center;
-            @include center;
+           
+            }
+        }
+        
+
+        &__block{
+            @media screen and (min-width:992px){
+            @include flex-center;
+           
+            }
+
         }
 
         &__element{
@@ -59,6 +77,11 @@
             align-items: center;         
             position: relative;
             @include element($color-grey);
+
+            @media screen and (min-width:992px){
+                width: 25%;
+                margin-left: 50px;
+            }
             
             &--purple{
                 background-color: lighten($color-primary, 35);
@@ -99,3 +122,4 @@
         }
     }
 }
+
