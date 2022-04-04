@@ -1,7 +1,23 @@
 @import url(../utils/_mixins.scss);
 @font-face {
   font-family: "Roboto";
-  src: url(/fonts/Roboto-Regular.ttf), url(/fonts/Roboto-Black.ttf), url(/fonts/Roboto-BlackItalic.ttf), url(/fonts/Roboto-Bold.ttf), url(/fonts/Roboto-BoldItalic.ttf), url(/fonts/Roboto-Italic.ttf), url(/fonts/Roboto-Light.ttf), url(/fonts/Roboto-LightItalic.ttf), url(/fonts/Roboto-Medium.ttf), url(/fonts/Roboto-MediumItalic.ttf), url(/fonts/Roboto-Thin.ttf), url(/fonts/Roboto-ThinItalic.ttf);
+  src: url(/fonts/Roboto-Regular.ttf), url(/fonts/Roboto-Black.ttf), url(/fonts/Roboto-BlackItalic.ttf), url(/fonts/Roboto-Bold.ttf), url(/fonts/Roboto-BoldItalic.ttf), url(/fonts/Roboto-Italic.ttf), url(/fonts/Roboto-Light.ttf), url(/fonts/Roboto-LightItalic.ttf), url(/fonts/Roboto-Medium.ttf), url(/fonts/Roboto-MediumItalic.ttf), url(/fonts/Roboto-Thin.ttf);
+}
+@font-face {
+  font-family: "Roboto-thin";
+  src: url(/fonts/Roboto-Thin.ttf);
+}
+@font-face {
+  font-family: "Roboto-light";
+  src: url(/fonts/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: "Roboto-bold";
+  src: url(/fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: "Roboto-medium";
+  src: url(/fonts/Roboto-Medium.ttf);
 }
 @font-face {
   font-family: "Shrikhand";
@@ -113,7 +129,7 @@ ul {
 .card__heading p {
   font-size: 18px;
   font-family: "Roboto-light", "Arial", "Sans-serif";
-  font-weight: 300;
+  font-weight: 400;
   color: black;
 }
 
@@ -150,6 +166,11 @@ ul {
 }
 .container-menu__block h2 {
   text-transform: uppercase;
+  font-size: 20px;
+  font-family: "Roboto-light", "Arial", "Sans-serif";
+  font-weight: 400;
+  color: black;
+  font-weight: 600;
 }
 .container-menu__block h2 .bordered {
   border-bottom: solid 3px #99E2D0;
@@ -171,6 +192,12 @@ ul {
 .container-menu__element__description {
   line-height: 0.6;
 }
+.container-menu__element__description p {
+  font-size: 18px;
+  font-family: "Roboto-light", "Arial", "Sans-serif";
+  font-weight: 400;
+  color: black;
+}
 .container-menu__btn {
   background: linear-gradient(to top left, #9356DC, #FF79DA);
   color: white;
@@ -182,6 +209,10 @@ ul {
   border-radius: 30px;
   box-shadow: 1px 2px 10px #c2c2c2;
   margin: 20px 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
 }
 .container-menu__btn:hover {
   box-shadow: 1px 2px 30px #c2c2c2;
@@ -268,7 +299,7 @@ footer .footer__icon--rotate {
 .container-explore p {
   font-size: 20px;
   font-family: "Roboto-light", "Arial", "Sans-serif";
-  font-weight: 300;
+  font-weight: 400;
   color: black;
 }
 .container-explore__btn {

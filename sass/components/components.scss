@@ -90,6 +90,7 @@
     position: relative;
     bottom: 80px;
 
+
     &__heading{
         display: flex;
         justify-content:space-between;
@@ -109,6 +110,8 @@
         
         h2{
             text-transform: uppercase;
+            @include light-p;
+            font-weight: 600;
 
             .bordered{
                 border-bottom: solid 3px $color-tertiary;
@@ -126,11 +129,22 @@
 
         &__description{
             line-height: 0.6;
+
+           
+
+            p{
+                @include light-p(18px);
+            }
         }
     }
 
     &__btn{
         @include btn;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+        
     }
    
 }
