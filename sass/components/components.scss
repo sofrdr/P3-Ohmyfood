@@ -62,7 +62,7 @@
 
             &--bg {
                 opacity: 0;
-                transition: opacity 600ms linear;
+                transition: opacity 400ms linear;
                 background: linear-gradient(to bottom, $color-primary, $color-secondary);
                 background-clip: text;
                 -webkit-background-clip: text;
@@ -73,8 +73,17 @@
                 bottom: 0;
                 right: 0;
 
-                &:hover {
-                    opacity: 1;
+                @media screen and (min-width:992px){
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+                
+
+                @media screen and (max-width:992px){
+                    &:active{
+                        opacity: 1;
+                    }
                 }
             }
         }
