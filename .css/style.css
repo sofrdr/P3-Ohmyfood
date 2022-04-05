@@ -130,6 +130,24 @@ ul {
   font-size: 30px;
   color: #000;
   margin-right: 10px;
+  padding: 0;
+  position: relative;
+}
+.card__heading__icon--bg {
+  opacity: 0;
+  transition: opacity 600ms linear;
+  background: linear-gradient(to bottom, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.card__heading__icon--bg:hover {
+  opacity: 1;
 }
 .card__heading p {
   font-size: 18px;
@@ -181,6 +199,7 @@ ul {
   font-size: 30px;
   color: #000;
   margin-right: 10px;
+  padding: 0;
 }
 .container-menu__block {
   margin: 40px 0;
@@ -340,6 +359,9 @@ footer .footer__icon--rotate {
   font-weight: 600;
   font-size: 18px;
   width: 150px;
+}
+.container-loc__form:focus {
+  border: 2px solid #9356DC;
 }
 .container-loc__icon {
   font-size: 18px;

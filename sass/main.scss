@@ -1,6 +1,7 @@
 @import "utils/_variables.scss";
-@import "base/standards.scss";
 @import "utils/_mixins.scss";
+@import "base/standards.scss";
+
 @import "components/components.scss";
 @import "layouts/layouts.scss";
 
@@ -23,6 +24,9 @@
             font-weight: 600;
             font-size: 18px;
             width: 150px;
+            &:focus{
+                border: 2px solid $color-primary;
+            }
             
             
             
