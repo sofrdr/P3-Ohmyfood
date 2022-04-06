@@ -70,8 +70,8 @@
 
             &:hover {
                 background-color: lighten($color-primary, 35);
-                
-                & > .container-pres__element__icon{
+
+                & > .container-pres__element__icon {
                     color: $color-primary;
                 }
             }
@@ -127,21 +127,6 @@
         img {
             @include fit-img;
             border-radius: 20px 20px 0 0;
-        }
-
-        .new {
-            width: 80px;
-            height: 20px;
-            background-color: $color-tertiary;
-            color: darken($color-tertiary, 40);
-            position: absolute;
-            top: 10px;
-            right: 15px;
-            text-align: center;
-            padding: 6px;
-            font-family: "Roboto-medium";
-            font-size: 16px;
-            border-radius: 3px;
         }
     }
 
