@@ -80,8 +80,12 @@
                 margin: 0 20px;
             }
 
-            &--purple {
+            &:hover {
                 background-color: lighten($color-primary, 35);
+                
+                & > .container-pres__element__icon{
+                    color: $color-primary;
+                }
             }
 
             &__icon {
@@ -89,10 +93,6 @@
                 width: 18px;
                 color: darken($color-grey, 50);
                 font-size: 20px;
-
-                &--purple {
-                    color: $color-primary;
-                }
             }
         }
     }
@@ -247,10 +247,8 @@
         }
 
         &__description {
-            
             p {
                 @include light-p(16px);
-                
             }
         }
     }
