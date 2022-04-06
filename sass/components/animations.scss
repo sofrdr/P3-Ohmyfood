@@ -58,14 +58,19 @@
                 transform: translateX(-90px);
             }
 
-            & > .container-menu__element__description {
-                & > * {
-                    width: 200px;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
+            @media screen and (max-width: 768px){
+                
+                & > .container-menu__element__description {
+                    & > * {
+                        width: 200px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
                 }
             }
+
+           
         }
     }
 }

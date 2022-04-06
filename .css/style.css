@@ -426,6 +426,8 @@ ul {
   .container-menu__element:active > .container-menu__element__price {
     transform: translateX(-90px);
   }
+}
+@media screen and (max-width: 992px) and (max-width: 768px) {
   .container-menu__element:active > .container-menu__element__description > * {
     width: 200px;
     white-space: nowrap;
