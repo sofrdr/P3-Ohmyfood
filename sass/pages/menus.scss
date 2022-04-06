@@ -75,9 +75,12 @@
         }
 
         
+        
+
+        
 
         &__description {
-            
+         line-height: 0.9;   
             p {
                 @include light-p(16px);
             }

@@ -147,7 +147,7 @@ ul {
 }
 @media screen and (max-width: 992px) and (max-width: 768px) {
   .container-menu__element:active > .container-menu__element__description > * {
-    width: 200px;
+    width: 150px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -514,6 +514,9 @@ footer .footer__icon--rotate {
   .container-menu__element {
     width: 100%;
   }
+}
+.container-menu__element__description {
+  line-height: 0.9;
 }
 .container-menu__element__description p {
   font-size: 16px;
