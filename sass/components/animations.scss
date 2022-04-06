@@ -1,0 +1,25 @@
+.container-menu__element{
+
+
+    &__box{
+        background-color: $color-tertiary;
+        height: 100%;
+        width: 90px;
+        border-radius: 0 20px 20px 0;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 400ms ease-in-out;
+        transition-delay: 50ms;
+        overflow: hidden;
+        
+        
+    }
+
+    &:hover{
+        & > .container-menu__element__box{
+            transform: scaleX(1);
+        }
+    }
+
+    
+}
