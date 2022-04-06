@@ -212,6 +212,7 @@
 
         &__icon {
             @include heart-icon;
+            cursor: pointer;
         }
     }
 

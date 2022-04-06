@@ -3,5 +3,6 @@ $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0; 
 $color-grey: lighten(#f2f2f2, 1);
 $grey-shadow: darken($color-grey, 20);
+$background-btn: linear-gradient(to top left, $color-primary, $color-secondary);
 
 $padding: 15px 30px; 
