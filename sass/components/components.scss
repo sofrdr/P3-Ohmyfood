@@ -10,6 +10,114 @@
     left: -15px;
 }
 
+.container {
+    background-color: $color-grey;
+
+    &-loc {
+        @include flex-center;
+        padding: 15px;
+        background-color: darken($color-grey, 5);
+        color: darken($color-grey, 70);
+
+        &__form {
+            margin-left: 20px;
+            border: hidden;
+            background-color: darken($color-grey, 5);
+            color: darken($color-grey, 70);
+            font-weight: 600;
+            font-size: 18px;
+            width: 150px;
+            &:focus {
+                border: 2px solid $color-primary;
+            }
+        }
+
+        &__icon {
+            font-size: 18px;
+        }
+    }
+
+    &-explore {
+        text-align: center;
+        padding: $padding;
+
+        h1 {
+            padding: 0 60px;
+        }
+
+        p {
+            @include light-p;
+        }
+
+        &__btn {
+            @include btn;
+        }
+    }
+    &-pres {
+        background-color: white;
+        margin: 40px 30px;
+
+        h2 {
+            @media screen and (min-width: 992px) {
+                text-align: center;
+            }
+        }
+
+        &__block {
+            @media screen and (min-width: 992px) {
+                @include flex-center;
+            }
+        }
+
+        &__element {
+            display: flex;
+            align-items: center;
+            position: relative;
+            @include element($color-grey);
+
+            @media screen and (min-width: 992px) {
+                width: 33%;
+                margin: 0 20px;
+            }
+
+            &--purple {
+                background-color: lighten($color-primary, 35);
+            }
+
+            &__icon {
+                margin: 0 30px 0 40px;
+                width: 18px;
+                color: darken($color-grey, 50);
+                font-size: 20px;
+
+                &--purple {
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+
+    &-restaurant {
+        padding: 15px 20px 50px;
+
+        h2 {
+            @media screen and (min-width: 992px) {
+                text-align: center;
+            }
+        }
+
+        &-cards {
+            @media screen and (min-width: 768px) {
+                display: flex;
+                flex-wrap: wrap;
+                & > * {
+                    flex: 1;
+                }
+            }
+        }
+    }
+}
+
 .card {
     width: 100%;
     height: 300px;
@@ -58,34 +166,6 @@
 
         &__icon {
             @include heart-icon;
-            position: relative;
-
-            &--bg {
-                opacity: 0;
-                transition: opacity 400ms linear;
-                background: linear-gradient(to bottom, $color-primary, $color-secondary);
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;                
-                position: absolute;
-                top: 0;
-                left: 0;
-                bottom: 0;
-                right: 0;
-
-                @media screen and (min-width:992px){
-                    &:hover {
-                        opacity: 1;
-                    }
-                }
-                
-
-                @media screen and (max-width:992px){
-                    &:active{
-                        opacity: 1;
-                    }
-                }
-            }
         }
 
         p {
@@ -180,30 +260,4 @@
         display: block;
         width: 200px;
     }
-}
-
-.container-menu__element{
-
-
-    &__box{
-        background-color: $color-tertiary;
-        height: 100%;
-        width: 90px;
-        border-radius: 0 20px 20px 0;
-        transform: scaleX(0);
-        transform-origin: right;
-        transition: transform 400ms ease-in-out;
-        transition-delay: 50ms;
-        overflow: hidden;
-        
-        
-    }
-
-    &:hover{
-        & > .container-menu__element__box{
-            transform: scaleX(1);
-        }
-    }
-
-    
 }
