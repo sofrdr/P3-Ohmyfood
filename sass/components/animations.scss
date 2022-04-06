@@ -30,11 +30,11 @@
         }
     }
 
-    @media screen and (min-width: 992px){
+    @media screen and (min-width: 992px) {
         &:hover {
             & > .container-menu__element__box {
                 transform: scaleX(1);
-    
+
                 & > .fa-circle-check {
                     transform: rotate(0turn);
                 }
@@ -45,17 +45,26 @@
         }
     }
 
-    @media screen and (max-width: 992px){
+    @media screen and (max-width: 992px) {
         &:active {
             & > .container-menu__element__box {
                 transform: scaleX(1);
-    
+
                 & > .fa-circle-check {
                     transform: rotate(0turn);
                 }
             }
             & > .container-menu__element__price {
                 transform: translateX(-90px);
+            }
+
+            & > .container-menu__element__description {
+                & > * {
+                    width: 200px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
             }
         }
     }
