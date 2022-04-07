@@ -10,8 +10,6 @@
     }
 }
 
-
-
 .container-menu {
     border-radius: 40px 40px 0 0;
     margin-top: -60px;
@@ -35,7 +33,7 @@
                 margin-right: 30px;
             }
 
-            @media screen and (max-width:768px){
+            @media screen and (max-width: 768px) {
                 font-size: 28px;
             }
         }
@@ -76,15 +74,14 @@
             width: 100%;
         }
 
-        
-        
-
-        
-
         &__description {
-         line-height: 1;   
+            line-height: 1;
             p {
                 @include light-p(14px);
+
+                @media screen and (min-width:768px){
+                    @include light-p(16px);
+                }
             }
         }
     }

@@ -158,9 +158,22 @@ ul {
 .card__heading__icon {
   position: relative;
 }
+@media screen and (min-width: 992px) {
+  .card__heading__icon:hover > .card__heading__icon--bg {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+@media screen and (max-width: 992px) {
+  .card__heading__icon:active > .card__heading__icon--bg {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
 .card__heading__icon--bg {
   opacity: 0;
-  transition: opacity 400ms linear;
+  transform: scale(0);
+  transition: opacity 500ms, transform 500ms linear;
   background: linear-gradient(to bottom, #9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
@@ -171,16 +184,6 @@ ul {
   bottom: 0;
   right: 0;
   cursor: pointer;
-}
-@media screen and (min-width: 992px) {
-  .card__heading__icon--bg:hover {
-    opacity: 1;
-  }
-}
-@media screen and (max-width: 992px) {
-  .card__heading__icon--bg:active {
-    opacity: 1;
-  }
 }
 
 /*HEADER*/
@@ -524,6 +527,14 @@ footer .footer__icon--rotate {
   font-family: "Roboto-light", "Arial", "Sans-serif";
   font-weight: 400;
   color: black;
+}
+@media screen and (min-width: 768px) {
+  .container-menu__element__description p {
+    font-size: 16px;
+    font-family: "Roboto-light", "Arial", "Sans-serif";
+    font-weight: 400;
+    color: black;
+  }
 }
 .container-menu__btn {
   background: linear-gradient(to top left, #9356DC, #FF79DA);

@@ -77,9 +77,30 @@
 .card__heading__icon {
     position: relative;
 
+    @media screen and (min-width: 992px) {
+        &:hover {
+            & > .card__heading__icon--bg{
+                opacity: 1;
+                transform: scale(1.05);
+            }
+            
+        }
+    }
+
+    @media screen and (max-width: 992px) {
+        &:active {
+            & > .card__heading__icon--bg{
+                opacity: 1;
+                transform: scale(1.05);
+            }
+        }
+    }
+
     &--bg {
         opacity: 0;
-        transition: opacity 400ms linear;
+        transform: scale(0);
+        
+        transition: opacity 500ms, transform 500ms linear;
         background: linear-gradient(to bottom, $color-primary, $color-secondary);
         background-clip: text;
         -webkit-background-clip: text;
@@ -91,16 +112,6 @@
         right: 0;
         cursor: pointer;
 
-        @media screen and (min-width: 992px) {
-            &:hover {
-                opacity: 1;
-            }
-        }
-
-        @media screen and (max-width: 992px) {
-            &:active {
-                opacity: 1;
-            }
-        }
+        
     }
 }
