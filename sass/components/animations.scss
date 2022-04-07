@@ -115,3 +115,23 @@
         
     }
 }
+
+/*ANIMATION CHARGEMENT EN CASCADE*/
+
+.container-menu{
+    & > .menu-entrees{
+        @include anim-loading-menu(200ms)
+    }
+    & > .menu-plats{
+        @include anim-loading-menu(700ms)
+    }
+    & > .menu-desserts{
+        @include anim-loading-menu(1200ms)
+    }
+}
+
+
+
+
+
+
