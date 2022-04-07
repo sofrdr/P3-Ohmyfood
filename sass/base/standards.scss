@@ -18,32 +18,33 @@
 
 @font-face {
     font-family: "Roboto-thin";
-    src: url(/fonts/Roboto-Thin.ttf);
+    src: url(../fonts/Roboto-Thin.ttf);
 }
 
 @font-face {
     font-family: "Roboto-light";
-    src: url(/fonts/Roboto-Light.ttf);
+    src: url(../fonts/Roboto-Light.ttf);
 }
 
 @font-face {
     font-family: "Roboto-bold";
-    src: url(/fonts/Roboto-Bold.ttf);
+    src: url(../fonts/Roboto-Bold.ttf);
 }
 
 @font-face {
     font-family: "Roboto-medium";
-    src: url(/fonts/Roboto-Medium.ttf);
+    src: url(../fonts/Roboto-Medium.ttf);
 }
 
 @font-face {
     font-family: "Shrikhand";
-    src: url(/fonts/Shrikhand-Regular.ttf);
+    src: url(../fonts/Shrikhand-Regular.ttf);
 }
 
 body{
     margin: 0;
     font-family: "Roboto", "Arial", "Sans-serif" ;
+    
     
     
 
@@ -67,7 +68,7 @@ h2{
 }
 
 h3{
-    @include title-bold(20px);
+    @include title-bold(18px);
 }
 
 a{
@@ -84,5 +85,47 @@ ul{
 ::placeholder{
     opacity: 1;    
 }
-    
 
+
+/*KEYFRAMES*/
+
+@keyframes loading-menu{
+    0%{
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes spinner{
+    0%{
+        transform: rotate(0turn);
+        opacity: 1;
+    }
+
+
+
+    100%{
+        transform: rotate(1turn);
+        opacity: 1;
+    }
+}
+
+@keyframes bg-opacity{
+    0%{
+        opacity: 0.1;
+    }
+
+    
+    99%{
+        opacity: 0.2;
+    }
+    
+    100%{
+        opacity: 1;
+    }
+}

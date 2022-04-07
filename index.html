@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="../.css/normalize.css/normalize.css">
-    <link type="text/css" rel="stylesheet" href=".css/style.css">
+    <link type="text/css" rel="stylesheet" href="../css/normalize.css/normalize.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/7117d084c3.js" crossorigin="anonymous" defer></script>
     <title>Ohmyfood!</title>
 </head>
@@ -15,9 +15,12 @@
     <header>
         <img src="images/logo/ohmyfood@2x.svg" alt="logo Ohmyfood!" class="header__logo">
     </header>
-    <main>
+    <div class="loading-spinner"></div>
+    <main class="main-index">
+        
         <section class="container ">
             <!-- Section 1 : Recherche de restaurants-->
+            
             <div class="container-loc">
                 <i class="fa-solid fa-location-dot container-loc__icon"></i>
                 <form>
@@ -44,9 +47,9 @@
                     <i class="fa-solid fa-list container-pres__element__icon"></i>
                     <p>Composez votre menu</p>
                 </div>
-                <div class="container-pres__element container-pres__element--purple">
+                <div class="container-pres__element">
                     <p class="number--rounded">3</p>
-                    <i class="fa-solid fa-store container-pres__element__icon container-pres__element__icon--purple"></i>
+                    <i class="fa-solid fa-store container-pres__element__icon"></i>
                     <p>Dégustez au restaurant</p>
                 </div>
             </div>
