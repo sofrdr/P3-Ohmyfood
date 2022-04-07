@@ -1,6 +1,6 @@
 .container {
     background-color: $color-grey;
-    position: relative;
+    
 
     &-loc {
         @include flex-center;
@@ -64,6 +64,7 @@
             align-items: center;
             position: relative;
             @include element($color-grey);
+            padding-right: 10px;
 
             @media screen and (min-width: 992px) {
                 width: 33%;
