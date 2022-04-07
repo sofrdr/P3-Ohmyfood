@@ -79,17 +79,16 @@
 
     @media screen and (min-width: 992px) {
         &:hover {
-            & > .card__heading__icon--bg{
+            & > .card__heading__icon--bg {
                 opacity: 1;
                 transform: scale(1.05);
             }
-            
         }
     }
 
     @media screen and (max-width: 992px) {
         &:active {
-            & > .card__heading__icon--bg{
+            & > .card__heading__icon--bg {
                 opacity: 1;
                 transform: scale(1.05);
             }
@@ -99,7 +98,7 @@
     &--bg {
         opacity: 0;
         transform: scale(0);
-        
+
         transition: opacity 500ms, transform 500ms linear;
         background: linear-gradient(to bottom, $color-primary, $color-secondary);
         background-clip: text;
@@ -111,27 +110,54 @@
         bottom: 0;
         right: 0;
         cursor: pointer;
-
-        
     }
 }
 
 /*ANIMATION CHARGEMENT EN CASCADE*/
 
-.container-menu{
-    & > .menu-entrees{
-        @include anim-loading-menu(200ms)
+.container-menu {
+    & > .menu-entrees {
+        @include anim-loading-menu(200ms);
     }
-    & > .menu-plats{
-        @include anim-loading-menu(700ms)
+    & > .menu-plats {
+        @include anim-loading-menu(700ms);
     }
-    & > .menu-desserts{
-        @include anim-loading-menu(1200ms)
+    & > .menu-desserts {
+        @include anim-loading-menu(1200ms);
     }
 }
 
+/*LOADING SPINNER*/
 
+.main-index {
+    opacity: 1;
+    animation: bg-opacity 3000ms 100ms;
+}
+.loading-spinner {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    position: absolute;
+    top: 40%;
+    left: 47%;
+    border: solid 10px $color-primary;
+    z-index: 2;
+    opacity: 0;
+    animation: spinner 1000ms 100ms ease-in-out;
+    animation-iteration-count: 3;
 
-
-
-
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        height: 100%;
+        width: 100%;
+        border-radius: 100%;
+        border-top: 10px solid $color-secondary;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+    }
+}
