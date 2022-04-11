@@ -16,7 +16,7 @@
     font-weight: 700;
 }
 
-@mixin title-medium($size){
+@mixin title-medium($size) {
     font-size: $size;
     font-weight: 500;
 }
@@ -27,7 +27,7 @@
     color: $color;
 }
 
-@mixin btn{
+@mixin btn {
     background: $background-btn;
     color: white;
     border: hidden;
@@ -38,9 +38,17 @@
     opacity: 1;
     transition: opacity 300ms;
     @include border-shadow(30px);
-    &:hover {
-        box-shadow: 1px 5px 30px $grey-shadow;
-        opacity: 0.8;
+    @media screen and (min-width: 992px) {
+        &:hover {
+            box-shadow: 1px 5px 30px $grey-shadow;
+            opacity: 0.8;
+        }
+    }
+    @media screen and (max-width: 992px) {
+        &:active {
+            box-shadow: 1px 5px 30px $grey-shadow;
+            opacity: 0.8;
+        }
     }
 }
 
@@ -59,20 +67,20 @@
     height: 100%;
 }
 
-@mixin heart-icon{
+@mixin heart-icon {
     font-size: 30px;
-    color: #000;          
+    color: #000;
     margin-right: 10px;
     padding: 0;
 }
 
-@mixin flex-center{
+@mixin flex-center {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-@mixin anim-loading-menu($delay){
+@mixin anim-loading-menu($delay) {
     opacity: 0;
     transform: translateY(-30px);
     transform-origin: top;
