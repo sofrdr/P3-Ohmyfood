@@ -1,23 +1,23 @@
 @import url(../utils/_mixins.scss);
 @font-face {
   font-family: "Roboto";
-  src: url(/fonts/Roboto-Regular.ttf), url(/fonts/Roboto-Black.ttf), url(/fonts/Roboto-BlackItalic.ttf), url(/fonts/Roboto-Bold.ttf), url(/fonts/Roboto-BoldItalic.ttf), url(/fonts/Roboto-Italic.ttf), url(/fonts/Roboto-Light.ttf), url(/fonts/Roboto-LightItalic.ttf), url(/fonts/Roboto-Medium.ttf), url(/fonts/Roboto-MediumItalic.ttf), url(/fonts/Roboto-Thin.ttf);
+  src: url(../fonts/Roboto-Regular.ttf);
+  font-weight: 400;
 }
 @font-face {
-  font-family: "Roboto-thin";
-  src: url(../fonts/Roboto-Thin.ttf);
-}
-@font-face {
-  font-family: "Roboto-light";
+  font-family: "Roboto";
   src: url(../fonts/Roboto-Light.ttf);
+  font-weight: 300;
 }
 @font-face {
-  font-family: "Roboto-bold";
+  font-family: "Roboto";
   src: url(../fonts/Roboto-Bold.ttf);
+  font-weight: 700;
 }
 @font-face {
-  font-family: "Roboto-medium";
+  font-family: "Roboto";
   src: url(../fonts/Roboto-Medium.ttf);
+  font-weight: 500;
 }
 @font-face {
   font-family: "Shrikhand";
@@ -26,7 +26,6 @@
 body {
   margin: 0;
   font-family: "Roboto", "Arial", "Sans-serif";
-  position: relative;
 }
 
 @media screen and (min-width: 992px) {
@@ -37,9 +36,8 @@ body {
 }
 
 h1, h2 {
-  font-family: "Roboto-bold", "Arial", "Sans-serif";
   font-size: 26px;
-  font-weight: 300;
+  font-weight: 700;
 }
 
 h2 {
@@ -47,9 +45,8 @@ h2 {
 }
 
 h3 {
-  font-family: "Roboto-bold", "Arial", "Sans-serif";
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 700;
 }
 
 a {
@@ -121,7 +118,7 @@ ul {
   right: 15px;
   text-align: center;
   padding: 6px;
-  font-family: "Roboto-medium";
+  font-weight: 500;
   font-size: 16px;
   border-radius: 4px;
 }
@@ -393,8 +390,7 @@ footer .footer__icon--rotate {
 }
 .container-explore p {
   font-size: 20px;
-  font-family: "Roboto-light", "Arial", "Sans-serif";
-  font-weight: 400;
+  font-weight: 300;
   color: black;
 }
 .container-explore__btn {
@@ -406,7 +402,7 @@ footer .footer__icon--rotate {
   font-family: "Roboto", "Arial", "Sans-serif";
   cursor: pointer;
   opacity: 1;
-  transition: opacity 300ms 50ms;
+  transition: opacity 300ms;
   border-radius: 30px;
   box-shadow: 1px 2px 10px #c2c2c2;
   margin: 20px 0;
@@ -436,7 +432,7 @@ footer .footer__icon--rotate {
   align-items: center;
   position: relative;
   padding: 10px 0;
-  font-family: "Roboto-medium", "Arial", "Sans-serif";
+  font-weight: 500;
   font-size: 18px;
   background-color: whitesmoke;
   cursor: pointer;
@@ -511,7 +507,7 @@ footer .footer__icon--rotate {
 }
 .card__heading {
   padding: 10px 15px;
-  line-height: 0.4;
+  line-height: 0.6;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -524,8 +520,7 @@ footer .footer__icon--rotate {
 }
 .card__heading p {
   font-size: 18px;
-  font-family: "Roboto-light", "Arial", "Sans-serif";
-  font-weight: 400;
+  font-weight: 300;
   color: black;
 }
 
@@ -597,8 +592,7 @@ footer .footer__icon--rotate {
 .container-menu__block h2 {
   text-transform: uppercase;
   font-size: 20px;
-  font-family: "Roboto-light", "Arial", "Sans-serif";
-  font-weight: 400;
+  font-weight: 300;
   color: black;
   font-weight: 600;
 }
@@ -607,7 +601,7 @@ footer .footer__icon--rotate {
 }
 .container-menu__element {
   padding: 10px 0;
-  font-family: "Roboto-medium", "Arial", "Sans-serif";
+  font-weight: 500;
   font-size: 18px;
   background-color: #fff;
   cursor: pointer;
@@ -642,15 +636,13 @@ footer .footer__icon--rotate {
 }
 .container-menu__element__description p {
   font-size: 16px;
-  font-family: "Roboto-light", "Arial", "Sans-serif";
-  font-weight: 400;
+  font-weight: 300;
   color: black;
 }
 @media screen and (max-width: 768px) {
   .container-menu__element__description p {
     font-size: 14px;
-    font-family: "Roboto-light", "Arial", "Sans-serif";
-    font-weight: 400;
+    font-weight: 300;
     color: black;
   }
 }
@@ -669,7 +661,7 @@ footer .footer__icon--rotate {
   font-family: "Roboto", "Arial", "Sans-serif";
   cursor: pointer;
   opacity: 1;
-  transition: opacity 300ms 50ms;
+  transition: opacity 300ms;
   border-radius: 30px;
   box-shadow: 1px 2px 10px #c2c2c2;
   margin: 20px 0;

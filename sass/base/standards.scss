@@ -1,39 +1,25 @@
-
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Regular.ttf);
+    font-weight: 400;
+}
 
 @font-face {
     font-family: "Roboto";
-    src: url(/fonts/Roboto-Regular.ttf),
-        url(/fonts/Roboto-Black.ttf),
-        url(/fonts/Roboto-BlackItalic.ttf),
-        url(/fonts/Roboto-Bold.ttf),
-        url(/fonts/Roboto-BoldItalic.ttf),
-        url(/fonts/Roboto-Italic.ttf),
-        url(/fonts/Roboto-Light.ttf),
-        url(/fonts/Roboto-LightItalic.ttf),
-        url(/fonts/Roboto-Medium.ttf),
-        url(/fonts/Roboto-MediumItalic.ttf),
-        url(/fonts/Roboto-Thin.ttf);
-    
-}
-
-@font-face {
-    font-family: "Roboto-thin";
-    src: url(../fonts/Roboto-Thin.ttf);
-}
-
-@font-face {
-    font-family: "Roboto-light";
     src: url(../fonts/Roboto-Light.ttf);
+    font-weight: 300;
 }
 
 @font-face {
-    font-family: "Roboto-bold";
+    font-family: "Roboto";
     src: url(../fonts/Roboto-Bold.ttf);
+    font-weight: 700;
 }
 
 @font-face {
-    font-family: "Roboto-medium";
+    font-family: "Roboto";
     src: url(../fonts/Roboto-Medium.ttf);
+    font-weight: 500;
 }
 
 @font-face {
@@ -41,91 +27,82 @@
     src: url(../fonts/Shrikhand-Regular.ttf);
 }
 
-body{
+body {
     margin: 0;
-    font-family: "Roboto", "Arial", "Sans-serif" ;
-    position: relative;
+    font-family: "Roboto", "Arial", "Sans-serif";
     
-    
-
 }
 
-main{
-    
-    @media screen and (min-width:992px){
-       margin: 0 auto;
-       width: 75%;
-
+main {
+    @media screen and (min-width: 992px) {
+        margin: 0 auto;
+        width: 75%;
     }
 }
 
-h1, h2{
+h1,h2 {
     @include title-bold;
 }
 
-h2{
+h2 {
     margin-bottom: 30px;
 }
 
-h3{
+h3 {
     @include title-bold(18px);
 }
 
-a{
+a {
     text-decoration: none;
     color: #000000;
 }
 
-ul{
+ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-::placeholder{
-    opacity: 1;    
+::placeholder {
+    opacity: 1;
 }
-
 
 /*KEYFRAMES*/
 
-@keyframes loading-menu{
-    0%{
+@keyframes loading-menu {
+    0% {
         transform: translateY(-30px);
         opacity: 0;
     }
 
-    100%{
+    100% {
         transform: translateY(0px);
         opacity: 1;
     }
 }
 
-@keyframes spinner{
-    0%{
+@keyframes spinner {
+    0% {
         transform: rotate(0turn);
         opacity: 1;
     }
 
-
-
-    100%{
+    100% {
         transform: rotate(1turn);
         opacity: 1;
     }
 }
 
-@keyframes bg-opacity{
-    0%{
+@keyframes bg-opacity {
+    0% {
         opacity: 0.1;
     }
 
-    
-    99%{
+    99% {
         opacity: 0.2;
     }
-    
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
