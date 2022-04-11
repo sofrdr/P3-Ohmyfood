@@ -75,16 +75,13 @@
         height: 70px;
         padding: 20px 15px 0px 15px;
 
-       
-
         @media screen and (min-width: 992px) {
             width: 100%;
         }
 
         &__description {
             width: 87%;
-            
-            
+
             h3 {
                 @media screen and (max-width: 768px) {
                     font-size: 18px;
@@ -95,8 +92,6 @@
             p {
                 @include light-p(16px);
                 @include text-ellipsis;
-                
-                
 
                 @media screen and (max-width: 768px) {
                     @include light-p(15px);
@@ -107,7 +102,6 @@
         &__price {
             @media screen and (max-width: 768px) {
                 font-size: 16px;
-                
             }
         }
     }
