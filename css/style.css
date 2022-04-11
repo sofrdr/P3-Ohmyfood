@@ -265,7 +265,7 @@ ul {
 }
 @media screen and (max-width: 768px) {
   .loading-spinner {
-    top: 10%;
+    top: 30%;
   }
 }
 .loading-spinner::before {
