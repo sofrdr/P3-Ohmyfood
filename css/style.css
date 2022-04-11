@@ -602,7 +602,7 @@ footer .footer__icon--rotate {
   font-size: 20px;
   font-weight: 300;
   color: black;
-  font-weight: 600;
+  font-weight: 400;
 }
 .container-menu__block h2 .bordered {
   border-bottom: solid 3px #99E2D0;
@@ -620,36 +620,35 @@ footer .footer__icon--rotate {
   justify-content: space-between;
   align-items: flex-end;
   height: 70px;
-  padding: 20px 30px 5px 15px;
-}
-@media screen and (max-width: 340px) {
-  .container-menu__element {
-    padding: 15px 15px 5px 15px;
-  }
-}
-@media screen and (max-width: 320px) {
-  .container-menu__element {
-    height: 90px;
-  }
+  padding: 20px 15px 0px 15px;
 }
 @media screen and (min-width: 992px) {
   .container-menu__element {
     width: 100%;
   }
 }
+.container-menu__element__description {
+  width: 87%;
+}
 @media screen and (max-width: 768px) {
   .container-menu__element__description h3 {
-    font-size: 16px;
+    font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 .container-menu__element__description p {
   font-size: 16px;
   font-weight: 300;
   color: black;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 @media screen and (max-width: 768px) {
   .container-menu__element__description p {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 300;
     color: black;
   }
@@ -657,7 +656,6 @@ footer .footer__icon--rotate {
 @media screen and (max-width: 768px) {
   .container-menu__element__price {
     font-size: 16px;
-    margin-left: 10px;
   }
 }
 .container-menu__btn {

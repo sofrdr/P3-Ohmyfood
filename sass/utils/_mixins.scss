@@ -87,3 +87,9 @@
     animation: loading-menu 1000ms $delay;
     animation-fill-mode: both;
 }
+
+@mixin text-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
