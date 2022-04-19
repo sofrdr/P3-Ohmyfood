@@ -65,6 +65,8 @@ ul {
 
 ::placeholder {
     opacity: 1;
+    color: darken($color-grey, 70);
+    font-family: "Roboto", "Arial", "Sans-serif";
 }
 
 /*KEYFRAMES*/

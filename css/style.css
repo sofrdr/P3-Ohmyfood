@@ -62,6 +62,8 @@ ul {
 
 ::placeholder {
   opacity: 1;
+  color: #424242;
+  font-family: "Roboto", "Arial", "Sans-serif";
 }
 
 /*KEYFRAMES*/
