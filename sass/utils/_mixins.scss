@@ -81,9 +81,9 @@
 }
 
 @mixin anim-loading-menu($delay) {
-    opacity: 0;
+    /*opacity: 0;
     transform: translateY(-30px);
-    transform-origin: top;
+    transform-origin: top;*/
     animation: loading-menu 1000ms $delay;
     animation-fill-mode: both;
 }

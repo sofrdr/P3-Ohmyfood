@@ -69,7 +69,7 @@ ul {
 /*KEYFRAMES*/
 @keyframes loading-menu {
   0% {
-    transform: translateY(-30px);
+    transform: translateY(30px);
     opacity: 0;
   }
   100% {
@@ -220,23 +220,23 @@ ul {
 
 /*ANIMATION CHARGEMENT EN CASCADE*/
 .container-menu > .menu-entrees {
-  opacity: 0;
+  /*opacity: 0;
   transform: translateY(-30px);
-  transform-origin: top;
+  transform-origin: top;*/
   animation: loading-menu 1000ms 200ms;
   animation-fill-mode: both;
 }
 .container-menu > .menu-plats {
-  opacity: 0;
+  /*opacity: 0;
   transform: translateY(-30px);
-  transform-origin: top;
+  transform-origin: top;*/
   animation: loading-menu 1000ms 700ms;
   animation-fill-mode: both;
 }
 .container-menu > .menu-desserts {
-  opacity: 0;
+  /*opacity: 0;
   transform: translateY(-30px);
-  transform-origin: top;
+  transform-origin: top;*/
   animation: loading-menu 1000ms 1200ms;
   animation-fill-mode: both;
 }
